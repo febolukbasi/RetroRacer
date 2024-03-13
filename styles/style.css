@@ -1,0 +1,74 @@
+body {
+    background-color:#B94429;
+}
+
+h1, p{
+color: #FDDA7D;
+font-family: ArcadeIn;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#homeScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#homeScreen a {
+    margin: 0.5em;
+    padding-right: 5em;
+    padding-left: 5em;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    font-size: 1em;
+    background-color: #809090;
+    color: #FDDA7D;
+    text-decoration: none;
+
+    border: none;
+    border-radius: 0.1em;
+    cursor: pointer;
+    border: 0.1em solid #FDDA7D;
+}
+
+#nameScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#nameScreen a {
+    background-color: #809090;
+    color: #FDDA7D;
+    text-decoration: none;
+    margin: 0.5em;
+    padding-right: 5em;
+    padding-left: 5em;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    font-size: 1em;
+    border: none;
+    border-radius: 0.1em;
+    cursor: pointer;
+    border: 0.1em solid #FDDA7D;
+}
+
+#nameScreen input {
+    margin: 0.5em;
+    padding: 1em;
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'ArcadeIn';
+    src: url('fonts/8-Bit Arcade In.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
