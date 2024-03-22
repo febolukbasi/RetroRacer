@@ -12,11 +12,25 @@
     </header>
     <main>
         <div id="homeScreen">
+            <div id="volumeDial"><p>Volume:</p>
+                <input type="range" id="volumeControl" min="0" max="100" value="50">
+                <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+                <button id="pauseButton">Pause</button>
+            </div>
             <p>Welcome To RetroRacer! Are You Ready To Race?</p>
-            <a href="name.html">Start!</a>
+
+            <p>Before we get started, let's insert your name!</p>
+            <div id="nameScreen">
+                <input type="text" id="playerName" placeholder="Enter Your Name">
+            </div>
+            <button id="playButton">Race!</button>
         </div>
             
-        
+        <div id="gameScreen" style="display: none;">
+            <p>hello</p>
+            <div id="player"></div>
+        </div>
+
     </main>
     <footer>
 

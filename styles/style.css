@@ -1,16 +1,33 @@
+@font-face {
+    font-family: 'Upheaval';
+    src: url('../fonts/upheavtt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color:#B94429;
 }
 
-h1, p{
+h1, p, a, input, button{
 color: #FDDA7D;
-font-family: ArcadeIn;
+font-family: 'Upheaval', sans-serif;
 }
 
 h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#volumeDial {
+    display: flex;
+    align-items:center;
+}
+
+#volumeDial button {
+color: #FDDA7D;
+background-color: #809090;
 }
 
 #homeScreen {
@@ -30,21 +47,36 @@ h1 {
     background-color: #809090;
     color: #FDDA7D;
     text-decoration: none;
-
     border: none;
     border-radius: 0.1em;
     cursor: pointer;
     border: 0.1em solid #FDDA7D;
 }
 
-#nameScreen {
+#playButton {
+    margin: 0.5em;
+    padding-right: 5em;
+    padding-left: 5em;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    font-size: 1em;
+    background-color: #809090;
+    color: #FDDA7D;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.1em;
+    cursor: pointer;
+    border: 0.1em solid #FDDA7D;
+}
+
+#gameScreen {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-#nameScreen a {
+#gameScreen a {
     background-color: #809090;
     color: #FDDA7D;
     text-decoration: none;
@@ -64,11 +96,34 @@ h1 {
     margin: 0.5em;
     padding: 1em;
     font-size: 1em;
+    background-color: #809090;
 }
 
-@font-face {
-    font-family: 'ArcadeIn';
-    src: url('fonts/8-Bit Arcade In.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+/* ChatGPT Prompt: how do I target the placeholder of the input? */
+#nameScreen ::placeholder {
+    color: #FDDA7D;
+    font-family: 'Upheaval', sans-serif;
+    opacity: 1;
 }
+
+/**/
+
+#gameScreen {
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    background-color: #B94429;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FDDA7D;
+}
+
+#player {
+    width: 4em;
+    height: 10em;
+    position: absolute;
+    bottom: 1em;
+    background-color: green;
+  }
